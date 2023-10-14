@@ -1,0 +1,8 @@
+Convert .ESD to .WIM
+
+open terminal as Administrator
+cd [folder contains ESD file]
+Run the following command to get index version Windows
+	dism /Get-WimInfo /WimFile:install.esd
+run the following command, index Windows Pro should be 6: 
+	dism /export-image /SourceImageFile:install.esd /SourceIndex:6 /DestinationImageFile:install.wim /Compress:max /CheckIntegrity
