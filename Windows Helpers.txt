@@ -9,7 +9,7 @@ Run the following command, index Windows Pro should be 6:
 
 Capture Image:
 cd [windows driver, should be c]:
-dism /capture-image /ImageFile:"D:\install_save.wim" /CaptureDir:C:\ Name:WinName /compress:max
+dism /capture-image /ImageFile:"D:\install_save.wim" /CaptureDir:C:\ /Name:WinName /compress:max
 
 
 
